@@ -2,11 +2,11 @@ package com.vndly.test;
 
 import org.testng.annotations.Test;
 
-public class DeleteTodo {
-	
+public class AddTodo {
+
 	@Test
-	public void deleteTodo() {
-		//your code here
+	public void addTodo() {
+
 	}
 
 }
