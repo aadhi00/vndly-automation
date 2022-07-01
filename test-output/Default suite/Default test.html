@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 01 10:26:47 IST 2022</td>
+<td>Started on:</td><td>Fri Jul 01 10:50:05 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10785 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13799 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.vndly.test.AddTodo.addTodo()'><b>addTodo</b><br>Test class: com.vndly.test.AddTodo</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.vndly.test.AddTodo.addTodo(AddTodo.java:71)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Priority mismatch expected [low] but found [medium]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.vndly.test.AddTodo.addTodo(AddTodo.java:95)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,11 +109,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1796047085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1796047085'><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.vndly.test.AddTodo.addTodo(AddTodo.java:71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace381708767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace381708767'><pre>java.lang.AssertionError: The following asserts failed:
+	Priority mismatch expected [low] but found [medium]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.vndly.test.AddTodo.addTodo(AddTodo.java:95)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,7 +144,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
+<td>13</td>
 <td>com.vndly.test.AddTodo@a7e666</td></tr>
 </table><p>
 </body>

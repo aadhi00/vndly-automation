@@ -39,7 +39,7 @@ public class AddTodo {
 		
 		String expDescription = "Test todo";
 		
-		String expPriority = "medium";
+		String expPriority = "low";
 		
 		String expDuedate = "Wed Jul 06 2022";
 
@@ -63,6 +63,13 @@ public class AddTodo {
 		WebElement btnSubmit = driver.findElement(By.id("add-todo"));
 
 		btnSubmit.click();
+		//race condition
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		SoftAssert softAssert = new SoftAssert();
 		
@@ -78,12 +85,13 @@ public class AddTodo {
 		
 		String actualDueDate = lstDueDates.get(3).getText();
 		
-		softAssert.assertEquals(actualPriority, expPriority);
+		softAssert.assertEquals(actualPriority, expPriority, "Priority mismatch");
 		
-		softAssert.assertEquals(actualDescription, expDescription);
+		softAssert.assertEquals(actualDescription, expDescription, "Description mismatch");
+		System.out.println("Description matches");
 		
-		softAssert.assertEquals(actualDueDate, expDuedate);
-		
+		softAssert.assertEquals(actualDueDate, expDuedate, "Due date mismatch");
+		System.out.println("Due date matches");
 		softAssert.assertAll();
 		
 		// driver.quit();

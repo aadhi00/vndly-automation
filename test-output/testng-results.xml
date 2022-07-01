@@ -2,21 +2,23 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10785" started-at="2022-07-01T10:26:47 IST" finished-at="2022-07-01T10:26:57 IST">
+  <suite name="Default suite" duration-ms="13799" started-at="2022-07-01T10:50:05 IST" finished-at="2022-07-01T10:50:19 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10785" started-at="2022-07-01T10:26:47 IST" finished-at="2022-07-01T10:26:57 IST">
+    <test name="Default test" duration-ms="13799" started-at="2022-07-01T10:50:05 IST" finished-at="2022-07-01T10:50:19 IST">
       <class name="com.vndly.test.AddTodo">
-        <test-method status="FAIL" signature="addTodo()[pri:0, instance:com.vndly.test.AddTodo@a7e666]" name="addTodo" duration-ms="10744" started-at="2022-07-01T10:26:47 IST" finished-at="2022-07-01T10:26:57 IST">
-          <exception class="java.lang.IndexOutOfBoundsException">
+        <test-method status="FAIL" signature="addTodo()[pri:0, instance:com.vndly.test.AddTodo@a7e666]" name="addTodo" duration-ms="13749" started-at="2022-07-01T10:50:05 IST" finished-at="2022-07-01T10:50:19 IST">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Index: 1, Size: 1]]>
+              <![CDATA[The following asserts failed:
+Priority mismatch expected [low] but found [medium]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-at java.util.ArrayList.get(ArrayList.java:433)
-at com.vndly.test.AddTodo.addTodo(AddTodo.java:71)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Priority mismatch expected [low] but found [medium]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.vndly.test.AddTodo.addTodo(AddTodo.java:95)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,7 +49,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTodo -->

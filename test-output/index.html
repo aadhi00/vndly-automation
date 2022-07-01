@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\51464\AppData\Local\Temp\testng-eclipse--1386137359\testng-customsuite.xml</span>
+                    <span>C:\Users\51464\AppData\Local\Temp\testng-eclipse--815731528\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,10 +130,11 @@
                   <a name="addTodo">
                   </a> <!-- addTodo -->
                   <span class="method-name">addTodo</span>
-                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.vndly.test.AddTodo.addTodo(AddTodo.java:71)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Priority mismatch expected [low] but found [medium]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.vndly.test.AddTodo.addTodo(AddTodo.java:95)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,7 +172,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\51464\AppData\Local\Temp\testng-eclipse--1386137359\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\51464\AppData\Local\Temp\testng-eclipse--815731528\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -224,12 +225,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addTodo')
 data.setCell(0, 2, 'com.vndly.test.AddTodo')
-data.setCell(0, 3, 10744);
+data.setCell(0, 3, 13749);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
