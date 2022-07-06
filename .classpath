@@ -31,5 +31,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Caryen.Cheong/.p2/pool/plugins/org.testng_7.4.0.r202105021533.jar" sourcepath="C:/Users/Caryen.Cheong/.p2/pool/plugins/org.testng.source_7.4.0.r202105021533.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
